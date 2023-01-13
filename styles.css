@@ -239,8 +239,11 @@ nav p a {
 
 /* Mobile Devices */
 @media screen and (max-width:688px) {
+    
+    
     .container {
         width: 100%;
+        margin-left: 20px;
     }
 
     .players {
@@ -264,11 +267,10 @@ nav p a {
     .courses {
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
-    }
-
-    .course {
         justify-content: center;
     }
+
+    
     header{
         width: 100%;
         padding-left:25px;
