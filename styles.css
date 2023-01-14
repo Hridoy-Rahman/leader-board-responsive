@@ -1,6 +1,7 @@
-/* *{
-    margin: 0 auto;
-} */
+*{
+    margin: 0;
+}
+
 
 /* common styles */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@500&display=swap');
@@ -8,6 +9,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+
 }
 
 main {
@@ -19,7 +21,6 @@ main {
 .container {
     background-color: #fff;
     width: 870px;
-    border: none;
     border-radius: 10px;
     padding: 33px;
     margin-top: 21px;
@@ -37,6 +38,7 @@ hr {
     font-weight: 500;
     font-size: 24px;
     margin-top: 3px;
+    margin-bottom: 40px;
 }
 
 /*---------------------
@@ -48,12 +50,15 @@ hr {
 header {
     background: #562EFF;
     margin-bottom: 30px;
+    padding: 20px;
+    
 }
 
 .header {
     display: flex;
-    gap: 520px;
+    gap: 550px;
     justify-content: center;
+    
 }
 
 .header-right nav {
@@ -240,28 +245,29 @@ nav p a {
 /* Mobile Devices */
 @media screen and (max-width:688px) {
     
-    
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     .container {
-        width: 100%;
-        margin-left: 20px;
+        width: 80%;
     }
 
     .players {
         grid-template-columns: repeat(1, 1fr);
+        width: 80%;
     }
 
     .blog,
     .player {
         justify-content: center;
-    }
-    .player{
         flex-direction: column;
-        justify-content: center;
     }
-
+    
     .blogs {
         grid-template-columns: repeat(1, 1fr);
-
+        column-gap: 30px;
     }
 
     .courses {
@@ -273,7 +279,6 @@ nav p a {
     
     header{
         width: 100%;
-        padding-left:25px;
     }
 
     .header {
@@ -281,8 +286,12 @@ nav p a {
         gap: 20px;
         padding: 20px;
     }
+    .header-left{
+        justify-content: center;
+    }
     nav{
         justify-content: flex-end;
+        padding: 15px 20px;
         
     }
 }
